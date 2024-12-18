@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regestration form</title>
+</head>
+<body style="line-height: 3; background-color: rgb(99, 177, 177);">
+   <div>
+    <center>
+    <form style="border-radius: 20PX;">
+        <fieldset style="border-radius: 33px; border-style: solid;border-color: aliceblue;">  
+            <legend style="font-size: 20px; color: aliceblue;"><bold><i>REGESTRATION FORM</i></bold></legend>
+            <span style="color: aliceblue;">username:</span> <input type="text"placeholder="username"required></span>
+        <span><br>
+            <span style="color: aliceblue;">Email:</span>
+            <input type="text"placeholder="email" required ></span>
+            <span><br>
+                <span style="color: aliceblue;">date of birth:</span>
+                <input type="date" required></span>
+                <span><br>
+                    <span style="color: aliceblue;">phone number:</span>
+                    <input type="tel"placeholder="enter your mobile number" maxlength="10" required></span>
+                    <br><span style="color: aliceblue;">PURPOSE:</span>
+                    <select required>
+                        <option value="Select">Select</option>
+                        <option value="marrage">marrage</option>
+                        <option value="function">function</option>
+                        <option value="get_together">get together</option>
+                        <option value="other" id="hello">other</option>
+                    </select>
+                    <br>
+                    <input type="text" name="" id="help" placeholder="answer if ur reason is other">
+                    <br><span style="color: aliceblue;font-size: medium;">select the slot:</span>
+                    <select required>
+                        <option value="select">select</option>
+                        <option value="9am-12pm">9am-12pm</option>
+                        <option value="12pm-6pm">12pm-6pm</option>
+                        <option value="5pm-12am">5pm-12am</option>
+                        <option value="full day">full day</option>
+                        <option value="other">other</option>
+                    </select>
+                    <br><input type="text" placeholder="enter the slots you want">
+                   <!-- diet preference-->
+                   <div class="form-group" >
+                    <label style="color: white;font-size: medium;">Dietary Preferences</label>
+                    <div>
+                        <input type="checkbox" id="vegetarian" name="diet[]" value="vegetarian" style="cursor: pointer;">
+                        <label for="vegetarian" style="color: white;">Vegetarian</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="vegan" name="diet[]" value="vegan" style="cursor: pointer;">
+                        <label for="vegan" style="color:aliceblue;">Vegan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gluten-free" name="diet[]" value="gluten-free" style="cursor: pointer;">
+                        <label for="gluten-free" style="color: aliceblue;">Gluten-Free</label>
+                    </div>
+                </div>
+                <label style="color: aliceblue;">ADD MORE ITEMS IT IF YOU WANT :</label>
+                <br><textarea name="dish" id="dish" >enter if any dishes are more required</textarea>
+                <div>
+                    <input type="checkbox" style="cursor: pointer;" required>
+                    <label style="color: aliceblue;">i agree to the terms and conditions</label>
+                </div>
+                <div>
+                    <button type="submit" style="background-color: chartreuse; cursor: pointer;">Submit</button>
+                    <button type="reset"style="background-color:red; cursor:pointer;" >Reset</button>             
+                   </div>
+                </fieldset>
+    </form>
+</center>
+</div>
+</body>
+</html>
+
+

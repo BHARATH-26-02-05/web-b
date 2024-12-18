@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #fefefe,  #4a90e2);
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.input-group i {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #f40d0d;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #fff;
+    background:  #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff7e82;
+}
+
+.forgot-password {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}

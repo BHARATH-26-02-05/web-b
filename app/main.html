@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>student Feedback Submission</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Student Feedback Submission</h1>
+  <form id="feedbackForm">
+    <h2 class="section-title">Hostel Conditions</h2>
+    <div class="radio-group">
+      <label>Overall Condition:</label><br>
+      <label><input type="radio" name="hostelCondition" value="excellent" required> Excellent</label><br>
+      <label><input type="radio" name="hostelCondition" value="good"> Good</label><br>
+      <label><input type="radio" name="hostelCondition" value="bad"> Bad</label><br>
+      <label><input type="radio" name="hostelCondition" value="worst"> Worst</label>
+    </div>
+    <div class="feedback-group">
+      <label for="hostelFeedback">Detailed Feedback on Hostel Condition:</label>
+      <textarea id="hostelFeedback" name="hostelFeedback" placeholder="Please provide more details about the hostel condition..."></textarea>
+    </div>
+    
+    <h2 class="section-title">Food Quality</h2>
+    <div class="radio-group">
+      <label>Food Quality Rating:</label><br>
+      <label><input type="radio" name="foodQuality" value="excellent" required> Excellent</label><br>
+      <label><input type="radio" name="foodQuality" value="good"> Good</label><br>
+      <label><input type="radio" name="foodQuality" value="bad"> Bad</label><br>
+      <label><input type="radio" name="foodQuality" value="worst"> Worst</label>
+    </div>
+    <div class="feedback-group">
+      <label for="foodFeedback">Detailed Feedback on Food Quality:</label>
+      <textarea id="foodFeedback" name="foodFeedback" placeholder="Please provide more details about the food quality..."></textarea>
+    </div>
+    
+    <h2 class="section-title">Campus Facilities</h2>
+    <p class="additional-info">Please select the facilities you'd like to provide feedback on:</p>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="facilities" value="library"> Library</label><br>
+      <label><input type="checkbox" name="facilities" value="sportsComplex"> Sports Complex</label><br>
+      <label><input type="checkbox" name="facilities" value="computerLabs"> Computer Labs</label><br>
+      <label><input type="checkbox" name="facilities" value="studentCenter"> Student Center</label>
+    </div>
+    <textarea id="facilitiesFeedback" name="facilitiesFeedback" placeholder="Please provide your feedback on the selected facilities and suggestions for more extracurricular activities..." required></textarea>
+  
+    <h2 class="section-title">Academic Experience</h2>
+    <p class="additional-info">Please select the aspects you'd like to comment on:</p>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="academicAspects" value="courseContent"> Course Content</label><br>
+      <label><input type="checkbox" name="academicAspects" value="teachingQuality"> Teaching Quality</label><br>
+      <label><input type="checkbox" name="academicAspects" value="labFacilities"> Lab Facilities</label><br>
+      <label><input type="checkbox" name="academicAspects" value="careerSupport"> Career Support</label>
+    </div>
+    <textarea id="academicFeedback" name="academicFeedback" placeholder="Please provide your feedback on the selected academic aspects and suggestions for more college activities..." required></textarea>
+  
+    <h2 class="section-title">Additional Comments</h2>
+    <textarea id="additionalComments" name="additionalComments" placeholder="Any other feedback or suggestions..." required></textarea>
+  
+    <button type="submit">Submit Feedback</button>
+  </form>
+  </form>
+  <div id="popup" class="popup">Please fill out all required fields.</div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('feedbackForm');
+      const popup = document.getElementById('popup');
+    
+      form.addEventListener('submit', function(event) {
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+        const facilityCheckboxes = form.querySelectorAll('input[name="facilities"]:checked');
+        const academicCheckboxes = form.querySelectorAll('input[name="academicAspects"]:checked');
+    
+        requiredFields.forEach(field => {
+          if (!field.value.trim()) {
+            isValid = false;
+            field.style.borderColor = '#f44336';
+          } else {
+            field.style.borderColor = '';
+          }
+        });
+    
+        if (facilityCheckboxes.length === 0 || academicCheckboxes.length === 0) {
+          isValid = false;
+          showPopup('Please select at least one option in Facilities and Academic Experience sections.');
+        }
+    
+        if (!isValid) {
+          event.preventDefault();
+        }
+      });
+    
+
+      function showPopup(message) {
+        popup.textContent = message;
+        popup.style.display = 'block';
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 3000);
+      }
+    });
+</script>
+</html>
