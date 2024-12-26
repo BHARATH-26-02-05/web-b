@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .hero{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 30px;
+        height: 85vh;
+        width: 75vw;
+        background-color: antiquewhite;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        height: 80vh;
+        width: 70vw;
+        grid-gap: 20px;
+    }
+    .child1{
+        background-color: red;
+        border-radius: 30px;
+    }
+    .child2{
+        background-color: green;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+    .child3{
+        background-color: yellow;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .child4{
+        background-color: black;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .child5{
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .child6{
+        background-color: brown;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: baseline;
+    }
+</style>
+</head>
+<body>
+    <div class="hero">
+    <div class="parent">
+        <div class="child1" style="text-align: center;">
+            <div class="child-child" style="display: flex; justify-content: center; padding-top: 10px;">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="width: 80%; height: 100%; padding-bottom: 50px; justify-content: center;">
+                
+            </div>
+            <div>
+                he
+            </div>
+        </div>
+        <div class="child2">
+            <div class="child-child" style="display: flex; justify-content: center;">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="width: 80%; height: 100%; padding-bottom: 50px; justify-content: center;">
+            </div>
+        </div>
+        <div class="child3">
+            <div class="child-child" style="display: flex; justify-content: center;">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="width: 80%; height: 100%; padding-bottom: 50px; justify-content: center;">
+            </div>
+        </div>
+        <div class="child4">
+            <div class="child-child" style="display: flex; justify-content: center;">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="width: 80%; height: 100%; padding-bottom: 50px; justify-content: center;">
+            </div>
+        </div>
+        <div class="child5">
+            <div class="child-child" style="display: flex; justify-content: center;">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="width: 80%; height: 100%; padding-bottom: 50px; justify-content: center;">
+            </div>
+        </div>
+        <div class="child6">
+            <div class="child-child" style="display: flex; justify-content: center; text-align: center;">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="width: 80%; height: 100%; padding-bottom: 50px; justify-content: center;">
+                
+            </div>
+            <p> this is child 6</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

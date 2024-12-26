@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day8</title>
+    <style>*{
+            margin: 0;
+            padding: 0;
+    }
+        .cards{
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            height: 100vh;
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content: left; */
+            /* justify-content: space-between; */
+              /* justify-content: stretch; */
+            /* justify-content: flex-start; */
+            align-items: flex-end;
+        }
+        .card1{
+            width: 200px;
+            height: 300px;
+            background-color: red;
+            margin: 10px;
+        }
+        .card2{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(251, 255, 0);
+            margin: 10px;
+        }
+        .card3{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(102, 255, 0);
+            margin: 10px;
+        }
+        .card4{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(0, 140, 255);
+            margin: 10px;
+        }
+        .cards_1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            justify-content: space-around;
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            /* justify-content: start; each and every box moves to the start */
+            /* justify-content: end; each and every box moves to the end */
+           
+            justify-content: flex-end; ;
+        }
+        .card5,.card6,.card7,.card8,.card9,.card10{
+            width: 200px;
+            height: 300px;
+            background-color: red;
+            margin: 10px;
+        }
+        .card5:hover,.card6:hover,.card7:hover,.card8:hover,.card9:hover,.card10:hover{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(39, 248, 11);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <h1>justify-content: space-evenly</h1>
+        <div class="card1"></div>
+        <div class="card2"></div>   
+        <div class="card3"></div>
+        <div class="card4"></div>
+
+    </div>
+    <div class="cards_1">
+        <h1>justify-content: space-around</h1>
+        <div class="card1" style="order:1;"></div>
+        <div class="card2" style="order: 2;"></div>   
+        <div class="card3" style="order:3;"></div>
+        <div class="card4" style="order:4;"></div>
+        <div class="card5" style="order:5;"></div>
+        <div class="card6" style="order:6;"></div>
+        <div class="card7" style="order:7;"></div>
+        <div class="card8" style="order:8;"></div>
+        <div class="card9" style="order:9;"></div>
+        <div class="card10" style="order:10;"></div>
+
+
+
+    </div>
+</body>
+</html>

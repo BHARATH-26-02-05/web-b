@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding-top: 10px;
+            background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #navbar{
+            background: black;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 2px;
+        }
+        #navbar2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        #dev a{
+            color: white;
+            font-size: 32px;
+            font-weight: 600;
+            padding: 10px;
+        }li{
+            display: inline-block;
+            list-style: none;   
+        }
+        li a{
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        li a:hover{
+            color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: color 0.3s ease;
+        }
+        .cards{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 100px;
+            color: aliceblue;
+            text-align: center;
+        }.card1{
+            display: flex;
+            background: white;
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0 0 10px 0 black;
+        }
+        .card2{
+            background: white;
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0 0 10px 0 black;
+        }
+        .card3{
+            background: white;
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0 0 10px 0 black;
+        }.card4{
+            background: white;
+            width: 300px;
+            height: 400px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0 0 10px 0 black;
+        }
+        .card1-image img{
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .div-text{
+            display: flex;
+            padding: 10px;
+            font-weight: 700;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav id="navbar">
+        <div id="navbar2">
+        <div id="dev"><a href="">TRAVEL WITH MEE</a></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li>  <a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>  
+        </ul>
+    </div>
+    </nav>
+</header>
+ 
+    <div class="cards">
+        <div class="card1">
+          <div class="div-text">card1</div>
+            <div class="card1-image">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+        </div>
+        <div class="card2">
+            <div class="div-text">card2</div>
+            <div class="card1-image">
+
+            <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div></div>
+        <div class="card3">
+            <div class="div-text">card3</div>
+            <div class="card1-image">
+            <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div></div>
+        <div class="card4">
+            
+            <div class="div-text">card4</div>
+            <div class="card1-image">
+            <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div></div>
+    </div>
+</body>
+</html>

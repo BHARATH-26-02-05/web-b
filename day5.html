@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            height: 50vh;
+            width: 50vh;
+        }
+        div>div>img{
+            height: 50px;
+            width: 50px;
+        }
+        .first{
+            background-color: red;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            height: 50%;
+            width: 50%;
+
+        }
+        .second{
+            background-color: green;
+            margin: 20px;
+            display: flex;
+            height: 50%;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img2.jpg" alt="">this is 50 vh
+        <div id="glass">
+            <img src="img1.jpg" alt="">this is 50px
+        </div>
+    </div>
+    <div class="first">
+        <h1>this is parent div</h1>
+        <div class="second">
+            <h1>this is child div</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
