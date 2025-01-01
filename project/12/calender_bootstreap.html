@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100vw;
+        }
+        .ball{
+            background-color: darkgoldenrod;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            animation-name: jump;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes jump{
+            0%{
+                transform: translatey(0px);
+            }
+            30%{
+                transform: translate3d(25vw,200px,0);
+            }
+            60%{
+                transform: translate3d(50vw,0px,0);
+            }
+            90%{
+                transform: translate3d(95vw,200px,0);
+            }
+            100%{
+                transform: translatey(0px);
+            }
+            
+        }
+
+        .line{
+            height: 1px;
+            width: 100vw;
+            border: 1px solid black;
+            margin-top: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ball">
+
+    </div>
+    <div class="line">
+
+    </div>
+</body>
+</html>
